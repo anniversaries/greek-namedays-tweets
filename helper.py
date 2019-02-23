@@ -17,4 +17,4 @@ def getAnniversary():
         monthAndDay = today.strftime("%d/%m")
 
 
-    return data[monthAndDay]
+    return data[monthAndDay] if data.get(monthAndDay) != None else "Τίποτα σπουδαίο σήμερα 😉"
